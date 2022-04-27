@@ -64,13 +64,17 @@ for key, value in countries.items():
 
     kb_country_sites.update({key: keyboard})
 
+callbacks = []
+
+for key in countries.keys():
+    callbacks.append(key)
 
 @dp.message_handler(commands=["start"])
 async def start_command(message: types.Message):
     await bot.send_message(chat_id=message.chat.id, text="Откуда ты?", reply_markup=kb_countries)
 
 
-@dp.callback_query_handler(lambda c: c.data in ["netherland", "france", "spain", "russia", "kazakhstan", "belarus"])
+@dp.callback_query_handler(lambda c: c.data in callbacks)
 async def process_callback_button(callback_query: types.CallbackQuery):
 
     await bot.answer_callback_query(callback_query.id)
