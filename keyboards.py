@@ -1,0 +1,45 @@
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
+btn_netherland = InlineKeyboardButton(text="Нидерланды", callback_data="netherland_btn")
+btn_france = InlineKeyboardButton(text="Франция", callback_data="france_btn")
+btn_spain = InlineKeyboardButton(text="Испания", callback_data="spain_btn")
+btn_russia = InlineKeyboardButton(text="РФ", callback_data="russia_btn")
+btn_kazakhstan = InlineKeyboardButton(text="Казахстан", callback_data="kazakhstan_btn")
+btn_belarus = InlineKeyboardButton(text="Беларусь", callback_data="belarus_btn")
+kb_countries = InlineKeyboardMarkup().row(btn_netherland, btn_france).row(btn_spain, btn_russia).row(btn_kazakhstan, btn_belarus)
+
+btn_youtube_netherland = InlineKeyboardButton(text="Ютуб", url="https://www.youtube.com/")
+btn_youtube_france = InlineKeyboardButton(text="Ютуб", url="https://www.youtube.com/")
+btn_youtube_spain = InlineKeyboardButton(text="Ютуб", url="https://www.youtube.com/")
+btn_youtube_russia = InlineKeyboardButton(text="Ютуб", url="https://www.youtube.com/")
+btn_youtube_kazakhstan = InlineKeyboardButton(text="Ютуб", url="https://www.youtube.com/")
+btn_youtube_belarus = InlineKeyboardButton(text="Ютуб", url="https://www.youtube.com/")
+
+btn_yandex_netherland = InlineKeyboardButton(text="Яндекс", url="https://yandex.com/")
+btn_yandex_france = InlineKeyboardButton(text="Яндекс", url="https://yandex.com/")
+btn_yandex_spain = InlineKeyboardButton(text="Яндекс", url="https://yandex.com/")
+btn_yandex_russia = InlineKeyboardButton(text="Яндекс", url="https://yandex.ru/")
+btn_yandex_kazakhstan = InlineKeyboardButton(text="Яндекс", url="https://yandex.kz/")
+btn_yandex_belarus = InlineKeyboardButton(text="Яндекс", url="https://yandex.by/")
+
+btn_google_netherland = InlineKeyboardButton(text="Гугл", url="https://www.google.nl/")
+btn_google_france = InlineKeyboardButton(text="Гугл", url="https://www.google.fr/")
+btn_google_spain = InlineKeyboardButton(text="Гугл", url="https://www.google.es/")
+btn_google_russia = InlineKeyboardButton(text="Гугл", url="https://www.google.ru/")
+btn_google_kazakhstan = InlineKeyboardButton(text="Гугл", url="https://www.google.kz/")
+btn_google_belarus = InlineKeyboardButton(text="Гугл", url="https://www.google.by/")
+
+btn_instagram_netherland = InlineKeyboardButton(text="Инста", url="https://www.instagram.com/")
+btn_instagram_france = InlineKeyboardButton(text="Инста", url="https://www.instagram.com/")
+btn_instagram_spain = InlineKeyboardButton(text="Инста", url="https://www.instagram.com/")
+btn_instagram_russia = InlineKeyboardButton(text="Инста", url="https://www.instagram.com/")
+btn_instagram_kazakhstan = InlineKeyboardButton(text="Инста", url="https://www.instagram.com/")
+btn_instagram_belarus = InlineKeyboardButton(text="Инста", url="https://www.instagram.com/")
+
+kb_sites_netherland = InlineKeyboardMarkup().row(btn_youtube_netherland, btn_yandex_netherland).row(btn_google_netherland, btn_instagram_netherland)
+kb_sites_france = InlineKeyboardMarkup().row(btn_youtube_france, btn_yandex_france).row(btn_google_france, btn_instagram_france)
+kb_sites_spain = InlineKeyboardMarkup().row(btn_youtube_spain, btn_yandex_spain).row(btn_google_spain, btn_instagram_spain)
+kb_sites_russia = InlineKeyboardMarkup().row(btn_youtube_russia, btn_yandex_russia).row(btn_google_russia, btn_instagram_russia)
+kb_sites_kazakhstan = InlineKeyboardMarkup().row(btn_youtube_kazakhstan, btn_yandex_kazakhstan).row(btn_google_kazakhstan, btn_instagram_kazakhstan)
+kb_sites_belarus = InlineKeyboardMarkup().row(btn_youtube_belarus, btn_yandex_belarus).row(btn_google_belarus, btn_instagram_belarus)
+

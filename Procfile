@@ -1,0 +1,1 @@
+worker: python bot_Vega_dynamic.py
